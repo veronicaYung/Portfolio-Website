@@ -24,6 +24,7 @@
             <ul id="desktop">
                 <li class=navItem><a href="#frontpage">Welcome</a></li>
                 <li class=navItem><a href="#aboutMe">About Me</a></li>
+                <li class=navItem><a href="#myprojects">My Projects</a></li>
                 <li class=navItem><a href="#artWork">2D Artwork</a></li>
                 <li class=navItem><a href="#gameDesign">Game Design</a></li>
                 <li class=navItem><a href="#contactMe">Contact Me</a></li>
@@ -42,7 +43,7 @@
             <h1 class="nameHeader">
                 Veronica Yung
             </h1>
-            <h2>Game Design and Illustration</h2>
+            <h2>Software Developer</h2>
             <a href="https://drive.google.com/file/d/1feYf0JFLFIoN2vXRFuW303R30PTURH4y/view?usp=sharing">
                 <button id=resume>
                     Resume
@@ -69,31 +70,87 @@
                 <h1 id="introHeader">Hello! I'm Veronica.</h1>
                 <p>
                     <br>
-                    I'm an enthusiastic, and passionate game designer and illustrator.
-                    <br><br>
-                    A lot of my experience is related to the design-process and I think the most rewarding
-                    part of being a designer is to design with others! I especially love participating in game jams
-                    and hackathons; being in a team-dynamic is where I can work the best.
-                    <br><br>
-                    Ultimately, I have an affinity towards creative spaces and when I'm not designing new ad campaigns,
-                    character designs and concept art, I enjoy playing Ultimate Frisbee and spike ball.
-                    <br><br>
+                    I love building software projects that <strong>make life easier</strong> or solve real-world problems. I work with AI tools, large language models, and APIs, and have strong experience in web development. 
+                    <br> <br>
+                    I am a recent graduate from Carleton University with a Bachelor of Information Technology, specializing in Interactive Multimedia and Design. I am passionate about creating <strong>engaging user experiences</strong> and have worked on projects that combine my interests in technology, art, and design. 
+                    <br> <br>
+                    Outside of work, I like creating 2D/3D art and find myself getting lost in time when thinking about the next little detail to add. I also enjoy designing and developing games, and have participated in a few game jams!
+
                 </p>
+
             </div>
         </div>
     </section>
 
     <!-- Page 3 Starts Here -->
+    <section id="pageProj" class="page">
+        <div class="my-projects-container">
+            <h1 id="myprojects" class="my-projects-title">My Projects</h1>
+            <div class="project-card">
+                <div class="project-info">
+                    <h2>Behind the Fashion</h2>
+                    <p class="description">A Three.js-powered 3D experience that immerses you in the hidden complexities of the fashion industry. Navigate a futuristic space where every decision about fabrics, manufacturers, and styles will shape your journey and determine whether the three Vanguards will invest in your company.</p>
+                    <ul>
+                        <li>Three.js</li>
+                        <li>Vite</li>
+                        <li>React</li>
+                        <li>Node.js</li>
+                    </ul>
+                    <a href="https://behind-the-fashion.com/" class="visit-link">Try the Experience →</a>
+                </div>
+                <div class="carousel">
+                    <div class="carousel-images">
+                    <img src="Images/btf/start.png" alt="Screenshot of the start screen in behind-the-fashion">
+                    <img src="Images/btf/brandcreation.png" alt="Screenshot of brand creation stage in behind-the-fashion">
+                    <img src="Images/btf/style.png" alt="Screenshot of style selection stage in behind-the-fashion">
+                    <img src="Images/btf/factory.png" alt="Screenshot of factory stage in behind-the-fashion">
+                    <img src="Images/btf/persona.png" alt="Screenshot of persona user recieved in behind-the-fashion">
+                    </div>
+                    <button class="prev">&#10094;</button>
+                    <button class="next">&#10095;</button>
+                </div>       
+            </div>
+            <div class="project-card">
+                <div class="project-info">
+                    <h2>ResumeSync</h2>
+                    <p class="description">ResumeSync lets you upload a resume, scans the web for relevant job postings based on your title, and generates a ranked list of matches to highlight the positions most compatible with your skills and experience.</p>
+                    <ul>
+                        <li>Python</li>
+                        <li>Django</li>
+                        <li>Javascript</li>
+                        <li>React</li>
+                    </ul>
+                    <a href="https://github.com/veronicaYung/resume-matcher-web-scraper" class="visit-link">Github →</a>
+                </div>
+
+                <div class="project-image">
+                    <img src="Images/resumesync.png" alt="Project preview">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Page 4 Starts Here -->
     <section id="page3" class="page">
 
         <h1 class="pageName" id="artWork">
-            2D Artwork
+            2D/3D Artwork
         </h1 class>
 
         <!-- Artwork gallery -->
         <div class="image-grid">
             <!-- list filled with gallary images -->
             <ul id="gallery-grid">
+                <li class="gallery">
+                        <img class="picture" src="Images/brock-lee2.png" alt="Rendered 3D model of Brock Lee as  lego Figurine">
+                    </a>
+                </li>
+                <li class="gallery">
+                    <video class="picture" controls>
+                        <source src="Images/3Dvoicerender.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </li>
+                
                 <li class="gallery">
                     <a href="thePath.html">
                         <img class="picture" src="Images/childCard.png" alt="This is the dream/child card">
@@ -110,7 +167,7 @@
                     </a>
                 </li>
                 <!-- filler gallery pieces, all with "Coming Soon!" images -->
-                <li class="gallery">
+                <!-- <li class="gallery">
                     <img class="picture" src="Images/comingSoon.png" alt="Coming Soon!">
                 </li>
                 <li class="gallery">
@@ -118,7 +175,7 @@
                 </li>
                 <li class="gallery">
                     <img class="picture" src="Images/comingSoon.png" alt="Coming Soon!">
-                </li>
+                </li> -->
             </ul>
         </div>
     </section>
@@ -135,17 +192,24 @@
             <!-- list filled with gallary images -->
             <ul id="gallery-grid">
                 <li class="gallery">
-                    <a href="grapeJuiceRobot.html">
-                        <img class="picture" src="Images/startScreen.png" alt="This is GrapeJuiceRobot">
+                    <a href="https://tmatproductions.itch.io/grape-juice-robot">
+                        <img class="picture" src="Images/GJR.png" alt="This is GrapeJuiceRobot">
                     </a>
                 </li>
                 <li class="gallery">
-                    <a href="hollow.html">
-                        <img class="picture" src="Images/hollow_screen.png" alt="This is Hollow">
+                    <a href="https://orangebraincells.itch.io/hide-n-squeak">
+                        <img class="picture" src="Images/hide-n-squeak.png" alt="Hide n' Squeak start screen">
                     </a>
                 </li>
+                <li class="gallery">
+                    <a href="https://vsmiles.itch.io/hollow">
+                        <img class="picture" src="Images/Hollow.png" alt="This is Hollow">
+                    </a>
+                </li>
+         
+                
                 <!-- filler gallery pieces -->
-                <li class="gallery">
+                <!-- <li class="gallery">
                     <img class="picture" src="Images/comingSoon.png" alt="Coming Soon!">
                 </li>
                 <li class="gallery">
@@ -156,7 +220,7 @@
                 </li>
                 <li class="gallery">
                     <img class="picture" src="Images/comingSoon.png" alt="Coming Soon!">
-                </li>
+                </li> -->
             </ul>
         </div>
     </section>
@@ -171,9 +235,9 @@
         <!-- Icons and their links to contact info -->
         <div id="iconContainer">
             <figure>
-                <a href="mailto:veronica.yung@carleton.ca">
+                <a href="mailto:veronicayung12.41@gmail.com">
                     <img class="icon" src="Images/mail.png" width=200px height=200px alt="Email">
-                    <figcaption class="caption">veronicay@carleton.ca</figcaption>
+                    <figcaption class="caption">veronicayung12.41@gmail.com</figcaption>
                 </a>
             </figure>
             <figure>
@@ -188,4 +252,5 @@
             </figure>
         </div>
     </section>
+    <script src="js/carousel.js"></script>
 </body>
